@@ -2,9 +2,9 @@ package org.example;
 
 import org.example.model.ClassMetrics;
 import org.example.model.MetricsReport;
-import org.example.service.ConsoleReporter;
+import org.example.service.reporter.ConsoleReporter;
 import org.example.service.JarAnalyzer;
-import org.example.service.JsonReporter;
+import org.example.service.reporter.JsonReporter;
 import org.example.service.MetricsCalculator;
 
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package org.example.service;
+package org.example.service.reporter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.model.MetricsReport;
