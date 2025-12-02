@@ -1,0 +1,12 @@
+{
+  "analyzedJarPath" : "D:\\projects\\bytecode-manipulation-tkhapchaev\\src\\main\\resources\\sample-2.jar",
+  "maxInheritanceDepth" : 1,
+  "averageInheritanceDepth" : 0.25,
+  "averageFieldsPerClass" : 1.25,
+  "averageOverriddenMethodsPerClass" : 0.25,
+  "totalABCMetric" : {
+    "A" : 6,
+    "B" : 4,
+    "C" : 3
+  }
+}
