@@ -30,7 +30,7 @@ public class ClassMetrics {
         abcMetric = new ABCMetric();
     }
 
-    public static String methodKey(String name, String descriptor) {
+    public static String getMethodKey(String name, String descriptor) {
         return name + ":" + descriptor;
     }
 }

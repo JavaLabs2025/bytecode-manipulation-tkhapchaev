@@ -25,7 +25,7 @@ public class ClassMetricsCollector extends ClassVisitor {
 
     @Override
     public MethodVisitor visitMethod(int access, String name, String descriptor, String signature, String[] exceptions) {
-        var key = ClassMetrics.methodKey(name, descriptor);
+        var key = ClassMetrics.getMethodKey(name, descriptor);
 
         classMetrics.methodSignatures.add(key);
         classMetrics.methodsAccesses.put(key, access);

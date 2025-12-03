@@ -17,7 +17,7 @@ public class JarAnalyzer {
     }
 
     public Map<String, ClassMetrics> analyze() throws IOException {
-        Map<String, ClassMetrics> classes = new HashMap<>();
+        Map<String, ClassMetrics> classesMetrics = new HashMap<>();
 
         try (var jarFile = new JarFile(jarPath)) {
             var jarEntryEnumeration = jarFile.entries();
@@ -41,11 +41,11 @@ public class JarAnalyzer {
                     var classMetricsCollector = new ClassMetricsCollector(classMetrics);
 
                     classReader.accept(classMetricsCollector, ClassReader.SKIP_DEBUG | ClassReader.SKIP_FRAMES);
-                    classes.put(className, classMetrics);
+                    classesMetrics.put(className, classMetrics);
                 }
             }
         }
 
-        return classes;
+        return classesMetrics;
     }
 }
